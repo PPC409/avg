@@ -1,0 +1,215 @@
+body {
+  font-family: 'Lato', sans-serif;
+ 
+  background: linear-gradient(110deg, #e9ff6c 50%, #4fff92 50%);
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #916aff;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+
+section {
+  height: 100%;
+}
+.fas {
+  color: red;
+}
+button {
+  font-family: "";
+}
+h1 {
+  font-family: "Lato";
+}
+footer {
+   font-family: 'Lato';
+   color: white;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header {
+  height: 65%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  color: rgba(56, 8, 47, 0.904);
+}
+.header h1 {
+  font-size: 3.5em;
+}
+.start-btn {
+  padding: 10px 40px;
+  font-size: 1.2em;
+  background-color: rgba(160, 48, 48, 0.664);
+  color: white;
+  border: none;
+}
+.link-btn {
+  font-size: 1.2em;
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  color: black;
+  border: none;
+}
+.regles {
+  color: white;
+  background-color: #71ecff8a;
+  margin: 20px;
+  padding: 20px;
+  border-top-right-radius: 30%;
+}
+.regles h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.regles p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.select-an-option {
+  width: 80%;
+}
+.select-one {
+  height: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.select-btn button {
+  padding: 20px 50px;
+  font-size: 1.2em;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+#select-truth button {
+  border-top-right-radius: 30%;
+}
+#select-dare button {
+  border-bottom-left-radius: 30%;
+}
+.select-an-option .back {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.select-an-option .back button {
+  background-color: red;
+  padding: 5px 10px;
+  border: none;
+}
+.challenge {
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.challenge .challenge-header {
+  font-size: 3em;
+  color: rgba(167, 75, 150, 0.788);
+}
+.autre {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autre button {
+  padding: 20px 50px;
+  font-size: 1.2em;
+  background-color: red;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+
+.question-section1 .back {
+  height: 7%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  align-items: center;
+}
+
+.question-section1 .back button {
+  background-color: red;
+  padding: 5px 10px;
+  border: none;
+}
+
+.do {
+  height: 70%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.do h1 {
+  font-size: 3em;
+  color: rgba(167, 75, 150, 0.788);
+}
+.do .must-do {
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80vw;
+    padding: 10px;
+  }
+  .header {
+    height: 65%;
+  }
+  .header h1 {
+    font-size: 2em;
+  }
+  .regles {
+    font-size: 0.6em;
+  }
+  .challenge {
+    height: 60%;
+  }
+  .autre {
+    height: 10%;
+  }
+  .question-section1 .back {
+    height: 7%;
+  }
+  .challenge .challenge-header {
+    font-size: 2em;
+  }
+  .accept-or-decline button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 5px;
+  }}
